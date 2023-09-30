@@ -3,6 +3,7 @@
     import Header from '../../../../components/layout/Header'
     import Footer from '../../../../components/layout/Footer'
     import Aside from '../../../../components/layout/Aside'
+import Script from 'next/script'
 
       export default function page() {
               return (
@@ -20,13 +21,13 @@
                       <li className="breadcrumb-item active">Dashboard</li>
                     </ol>
                   </nav>
-                </div>{/* End Page Title */}
+                </div> 
                 <section className="section dashboard">
                   <div className="row">
-                    {/* Left side columns */}
+                    
                     <div className="col-lg-8">
                       <div className="row">
-                        {/* Sales Card */}
+                         
                         <div className="col-xxl-4 col-md-6">
                           <div className="card info-card sales-card">
                             <div className="filter">
@@ -53,8 +54,8 @@
                               </div>
                             </div>
                           </div>
-                        </div>{/* End Sales Card */}
-                        {/* Revenue Card */}
+                        </div>
+                         
                         <div className="col-xxl-4 col-md-6">
                           <div className="card info-card revenue-card">
                             <div className="filter">
@@ -81,8 +82,8 @@
                               </div>
                             </div>
                           </div>
-                        </div>{/* End Revenue Card */}
-                        {/* Customers Card */}
+                        </div>  
+                        
                         <div className="col-xxl-4 col-xl-12">
                           <div className="card info-card customers-card">
                             <div className="filter">
@@ -109,7 +110,7 @@
                               </div>
                             </div>
                           </div>
-                        </div>{/* End Customers Card */}
+                        </div>  
                         {/* Reports */}
                         <div className="col-12">
                           <div className="card">
@@ -126,17 +127,17 @@
                             </div>
                             <div className="card-body">
                               <h5 className="card-title">Reports <span>/Today</span></h5>
-                              {/* Line Chart */}
+                              
                               <div id="reportsChart" />
-                              {/* End Line Chart */}
+                              
                             </div>
                           </div>
-                        </div>{/* End Reports */}
+                        </div>  
                         {/* Recent Sales */}
                         <div className="col-12">
                           <div className="card recent-sales overflow-auto">
                             <div className="filter">
-                              <a className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></a>
+                              <Link className="icon" href="#" data-bs-toggle="dropdown"><i className="bi bi-three-dots" /></Link>
                               <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                                 <li className="dropdown-header text-start">
                                   <h6>Filter</h6>
@@ -227,35 +228,35 @@
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <th scope="row"><a href="#"><img src="assets/img/product-1.jpg" alt /></a></th>
+                                    <th scope="row"><a href="#"><img src="../assets/img/product-1.jpg" /></a></th>
                                     <td><a href="#" className="text-primary fw-bold">Ut inventore ipsa voluptas nulla</a></td>
                                     <td>$64</td>
                                     <td className="fw-bold">124</td>
                                     <td>$5,828</td>
                                   </tr>
                                   <tr>
-                                    <th scope="row"><a href="#"><img src="assets/img/product-2.jpg" alt /></a></th>
+                                    <th scope="row"><a href="#"><img src="../assets/img/product-2.jpg" /></a></th>
                                     <td><a href="#" className="text-primary fw-bold">Exercitationem similique doloremque</a></td>
                                     <td>$46</td>
                                     <td className="fw-bold">98</td>
                                     <td>$4,508</td>
                                   </tr>
                                   <tr>
-                                    <th scope="row"><a href="#"><img src="assets/img/product-3.jpg" alt /></a></th>
+                                    <th scope="row"><a href="#"><img src="../assets/img/product-3.jpg" /></a></th>
                                     <td><a href="#" className="text-primary fw-bold">Doloribus nisi exercitationem</a></td>
                                     <td>$59</td>
                                     <td className="fw-bold">74</td>
                                     <td>$4,366</td>
                                   </tr>
                                   <tr>
-                                    <th scope="row"><a href="#"><img src="assets/img/product-4.jpg" alt /></a></th>
+                                    <th scope="row"><a href="#"><img src="../assets/img/product-4.jpg" /></a></th>
                                     <td><a href="#" className="text-primary fw-bold">Officiis quaerat sint rerum error</a></td>
                                     <td>$32</td>
                                     <td className="fw-bold">63</td>
                                     <td>$2,016</td>
                                   </tr>
                                   <tr>
-                                    <th scope="row"><a href="#"><img src="assets/img/product-5.jpg" alt /></a></th>
+                                    <th scope="row"><a href="#"><img src="../assets/img/product-5.jpg" /></a></th>
                                     <td><a href="#" className="text-primary fw-bold">Sit unde debitis delectus repellendus</a></td>
                                     <td>$79</td>
                                     <td className="fw-bold">41</td>
@@ -384,27 +385,27 @@
                           <h5 className="card-title">News &amp; Updates <span>| Today</span></h5>
                           <div className="news">
                             <div className="post-item clearfix">
-                              <img src="assets/img/news-1.jpg" alt />
+                              <img src="../../assets/img/news-1.jpg" />
                               <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
                               <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
                             </div>
                             <div className="post-item clearfix">
-                              <img src="assets/img/news-2.jpg" alt />
+                              <img src="../assets/img/news-2.jpg" />
                               <h4><a href="#">Quidem autem et impedit</a></h4>
                               <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
                             </div>
                             <div className="post-item clearfix">
-                              <img src="assets/img/news-3.jpg" alt />
+                              <img src="../assets/img/news-3.jpg" />
                               <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
                               <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
                             </div>
                             <div className="post-item clearfix">
-                              <img src="assets/img/news-4.jpg" alt />
+                              <img src="../assets/img/news-4.jpg" />
                               <h4><a href="#">Laborum corporis quo dara net para</a></h4>
                               <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
                             </div>
                             <div className="post-item clearfix">
-                              <img src="assets/img/news-5.jpg" alt />
+                              <img src="../assets/img/news-5.jpg"/>
                               <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
                               <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
                             </div>
@@ -414,8 +415,9 @@
                     </div>{/* End Right side columns */}
                   </div>
                 </section>
+                
               </main> 
-              
+               
                 <Footer></Footer>
             </>
 

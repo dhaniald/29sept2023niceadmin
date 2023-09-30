@@ -301,7 +301,7 @@
    */
   const datatables = select('.datatable', true)
   datatables.forEach(datatable => {
-    new simpleDatatables.DataTable(datatable);
+   // new simpleDatatables.DataTable(datatable);
   })
 
   /**
@@ -312,7 +312,7 @@
     setTimeout(() => {
       new ResizeObserver(function() {
         select('.echart', true).forEach(getEchart => {
-          echarts.getInstanceByDom(getEchart).resize();
+          //echarts.getInstanceByDom(getEchart).resize();
         })
       }).observe(mainContainer);
     }, 200);

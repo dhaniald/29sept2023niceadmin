@@ -11,7 +11,7 @@ export default function Home() {
               <div className="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                 <div className="d-flex justify-content-center py-4">
                   <a href="index.html" className="logo d-flex align-items-center w-auto">
-                    <img src="assets/img/logo.png" alt=" " />
+                    <img src="assets/img/logo.png" />
                     <span className="d-none d-lg-block">NiceAdmin</span>
                   </a>
                 </div>{/* End Logo */}
