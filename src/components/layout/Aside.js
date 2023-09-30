@@ -27,7 +27,7 @@ export default function Aside() {
                                 </a>
                             </li>
                             <li>
-                                <a href="../components-badges">
+                                <a href="../admin/components-badges">
                                     <i className="bi bi-circle" /><span>Badges</span>
                                 </a>
                             </li>

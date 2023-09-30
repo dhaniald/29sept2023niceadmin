@@ -1,16 +1,18 @@
     import Link from 'next/link'
     import React from 'react'
-    import Header from '../../../../components/layout/Header'
-    import Footer from '../../../../components/layout/Footer'
-    import Aside from '../../../../components/layout/Aside'
-import Script from 'next/script'
+    import Header from '@/components/layout/Header'
+    import Aside from '@/components/layout/Aside'
+    import Footer from '@/components/layout/Footer'    
+    import Script from 'next/script'
 
       export default function page() {
               return (
                 <> 
-                < Header></Header>
+                
+                <Header /> 
+                <Aside/>
               
-              <Aside></Aside>
+            
               
               <main id="main" className="main">
                 <div className="pagetitle">
@@ -418,7 +420,7 @@ import Script from 'next/script'
                 
               </main> 
                
-                <Footer></Footer>
+                 <Footer/>
             </>
 
               )
