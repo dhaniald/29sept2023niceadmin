@@ -10,24 +10,41 @@ import './globals.css'
 import Script from 'next/script';
 import { Inter } from 'next/font/google'
 import Link from 'next/link';
+//Import {NamedImport1,NamedImport2,NamedImport3} from 'SomeLocation/Library'
+import { Open_Sans, Poppins, Nunito } from 'next/font/google'
 
 
-const inter = Inter({ subsets: ['latin'] })
+            const openSans = Open_Sans({
+              subsets: ['latin'],
+              display: 'swap',
+              weight: ['300', '400','500','600','700']
+            })
+            const poppins = Poppins({
+              subsets: ['latin'],
+              display: 'swap',
+              weight: ['300', '400','500','600','700']
+            })
 
-export const metadata = {
-  title: 'Create Next App',
-  description: ' ',
-}
+            const nunito = Nunito({
+              subsets: ['latin'],
+              display: 'swap',
+              weight: ['300', '400','500','600','700']
+            })
+
+            export const metadata = {
+              title: 'Create Next App',
+              description: ' ',
+            }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <link href="assets/img/favicon.png" rel="icon" />
       <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-      <body className={inter.className}>
-        {children}        
-        <Script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></Script>
-        <Script src="../../assets/vendor/apexcharts/apexcharts.min.js"></Script>        
+      <body className={`${openSans.className} ${nunito.className} ${poppins.className}`} >
+        {children}
+        < Script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></Script>
+        <Script src="../../assets/vendor/apexcharts/apexcharts.min.js"></Script>
         <Script src="../../assets/vendor/chart.js/chart.umd.js"></Script>
         <Script src="../../assets/vendor/echarts/echarts.min.js"></Script>
         <Script src="../../assets/vendor/quill/quill.min.js"></Script>
@@ -36,6 +53,6 @@ export default function RootLayout({ children }) {
         <Script src="../../assets/vendor/php-email-form/validate.js"></Script>
         <Script src="../../assets/js/main.js"></Script>
       </body>
-    </html>
+    </html >
   )
 }
