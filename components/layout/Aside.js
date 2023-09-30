@@ -17,32 +17,32 @@ export default function Aside() {
                         </a>
                         <ul id="components-nav" className="nav-content collapse " data-bs-parent="#sidebar-nav">
                             <li>
-                                <a href="./admin/components-alerts">
+                                <a href="../admin/components-alerts">
                                     <i className="bi bi-circle" /><span>Alerts</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="components-accordion.html">
+                                <a href="../admin/components-accordion">
                                     <i className="bi bi-circle" /><span>Accordion</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="components-badges.html">
+                                <a href="../components-badges">
                                     <i className="bi bi-circle" /><span>Badges</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="components-breadcrumbs.html">
+                                <a href="../admin/components-breadcrumbs">
                                     <i className="bi bi-circle" /><span>Breadcrumbs</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="components-buttons.html">
+                                <a href="../admin/components-buttons">
                                     <i className="bi bi-circle" /><span>Buttons</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="components-cards.html">
+                                <a href="../admin/components-cards">
                                     <i className="bi bi-circle" /><span>Cards</span>
                                 </a>
                             </li>

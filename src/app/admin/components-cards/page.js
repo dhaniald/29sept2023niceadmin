@@ -43,7 +43,7 @@ export default function page() {
         <div className="card mb-3">
           <div className="row g-0">
             <div className="col-md-4">
-              <img src="assets/img/card.jpg" className="img-fluid rounded-start" alt="..." />
+              <img src="../assets/img/card.jpg" className="img-fluid rounded-start" alt="..." />
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -57,7 +57,7 @@ export default function page() {
       <div className="col-lg-3">
         {/* Card with an image on top */}
         <div className="card">
-          <img src="assets/img/card.jpg" className="card-img-top" alt="..." />
+          <img src="../assets/img/card.jpg" className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">Card with an image on top</h5>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -69,13 +69,13 @@ export default function page() {
             <h5 className="card-title">Card with an image on bottom</h5>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
-          <img src="assets/img/card.jpg" className="card-img-bottom" alt="..." />
+          <img src="../assets/img/card.jpg" className="card-img-bottom" alt="..." />
         </div>{/* End Card with an image on bottom */}
       </div>
       <div className="col-lg-3">
         {/* Card with an image overlay */}
         <div className="card">
-          <img src="assets/img/card.jpg" className="card-img-top" alt="..." />
+          <img src="../assets/img/card.jpg" className="card-img-top" alt="..." />
           <div className="card-img-overlay">
             <h5 className="card-title">Card with an image overlay</h5>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
