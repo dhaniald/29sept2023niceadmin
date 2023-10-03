@@ -5,11 +5,13 @@ import '../../public/assets/vendor/quill/quill.snow.css';
 import '../../public/assets/vendor/quill/quill.bubble.css';
 import '../../public/assets/vendor/remixicon/remixicon.css';
 import '../../public/assets/vendor/simple-datatables/style.css';
+import "primereact/resources/themes/lara-light-indigo/theme.css";
 import '../../public/assets/css/style.css';
 import './globals.css'
 import Script from 'next/script';
 import { Inter } from 'next/font/google'
 import Link from 'next/link';
+import { PrimeReactProvider } from 'primereact/api';
 //Import {NamedImport1,NamedImport2,NamedImport3} from 'SomeLocation/Library'
 import { Open_Sans, Poppins, Nunito } from 'next/font/google'
 
@@ -38,11 +40,15 @@ import { Open_Sans, Poppins, Nunito } from 'next/font/google'
 
 export default function RootLayout({ children }) {
   return (
+    <PrimeReactProvider>
     <html lang="en">
       <link href="assets/img/favicon.png" rel="icon" />
       <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
       <body className={`${openSans.className} ${nunito.className} ${poppins.className}`} >
         {children}
+
+
+
         < Script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></Script>
         <Script src="../../assets/vendor/apexcharts/apexcharts.min.js"></Script>
         <Script src="../../assets/vendor/chart.js/chart.umd.js"></Script>
@@ -54,5 +60,6 @@ export default function RootLayout({ children }) {
         <Script src="../../assets/js/main.js"></Script>
       </body>
     </html >
+    </PrimeReactProvider>
   )
 }
