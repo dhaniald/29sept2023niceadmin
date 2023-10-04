@@ -32,6 +32,43 @@
             
         },
         {
+            id: '1002',
+            fk_account_name: 'Dinesh Kartik ',
+            product_link: 'ORAIMO 20000 mAh Power Bank (12 w, Fast Charging)  (White, Lithium Polymer)',
+            cc_ac_number: '56897845',
+            
+        },{
+            id: '1002',
+            fk_account_name: 'Dinesh Kartik ',
+            product_link: 'ORAIMO 20000 mAh Power Bank (12 w, Fast Charging)  (White, Lithium Polymer)',
+            cc_ac_number: '56897845',
+            
+        },{
+            id: '1002',
+            fk_account_name: 'Dinesh Kartik ',
+            product_link: 'ORAIMO 20000 mAh Power Bank (12 w, Fast Charging)  (White, Lithium Polymer)',
+            cc_ac_number: '56897845',
+            
+        },{
+            id: '1002',
+            fk_account_name: 'Dinesh Kartik ',
+            product_link: 'ORAIMO 20000 mAh Power Bank (12 w, Fast Charging)  (White, Lithium Polymer)',
+            cc_ac_number: '56897845',
+            
+        },{
+            id: '1002',
+            fk_account_name: 'Dinesh Kartik ',
+            product_link: 'ORAIMO 20000 mAh Power Bank (12 w, Fast Charging)  (White, Lithium Polymer)',
+            cc_ac_number: '56897845',
+            
+        },{
+            id: '1002',
+            fk_account_name: 'Dinesh Kartik ',
+            product_link: 'ORAIMO 20000 mAh Power Bank (12 w, Fast Charging)  (White, Lithium Polymer)',
+            cc_ac_number: '56897845',
+            
+        },
+        {
             id: '1003',
             fk_account_name: 'Arun Malviya ',
             product_link: 'ORAIMO 20000 mAh Power Bank (12 w, Fast Charging)  (White, Lithium Polymer)',
@@ -97,9 +134,9 @@
     
         const header = (
             <div className="flex align-items-center justify-content-end gap-2 d-md-flex justify-content-md-end">
-                <Button type="button" label="csv" icon="pi pi-file" rounded onClick={() => exportCSV(false)} data-pr-tooltip="CSV" />
-                <Button type="button" label="exl" icon="pi pi-file-excel" severity="success" rounded onClick={exportExcel} data-pr-tooltip="XLS" />
-                <Button type="button" label="pdf" icon="pi pi-file-pdf" severity="warning" rounded onClick={exportPdf} data-pr-tooltip="PDF" />
+                <Button type="button" label=".csv" icon="pi pi-file" rounded onClick={() => exportCSV(false)} data-pr-tooltip="CSV" />
+                <Button type="button" label=".exl" icon="pi pi-file-excel" severity="success" rounded onClick={exportExcel} data-pr-tooltip="XLS" />
+                <Button type="button" label=".pdf" icon="pi pi-file-pdf" severity="warning" rounded onClick={exportPdf} data-pr-tooltip="PDF" />
             </div>
         );
     
@@ -111,9 +148,9 @@
                         <div className="col-lg-12">
                         <div className="card">
                         <h4> <div className='card-body'> Purchase Done</div></h4>
-                        <DataTable ref={dt} value={products} header={header} tableStyle={{ minWidth: '50rem' }}>
+                        <DataTable paginator rows={5} rowsPerPageOptions={[5, 10, 25, 50]} ref={dt} value={products} header={header} tableStyle={{ minWidth: '50rem' }}>
                             {cols.map((col, index) => (
-                    <Column key={index} field={col.field} header={col.header} />
+                    <Column key={index} field={col.field} header={col.header} sortable />
                 ))}
             </DataTable>
                         {/* <DataTable value={products} tableStyle={{ minWidth: '50rem' }}>
